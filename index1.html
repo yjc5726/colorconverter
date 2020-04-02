@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="flex-container" style="display: flex;margin: 50px;justify-content: space-evenly;">
+    <div>
+      <h2>RGB</h2>
+      <div style="width:30px;height:30px;background: red;text-align:center;line-height:30px;display: inline-block">R:
+      </div>
+      <input type="number" min="0" max="255" step="1" placeholder="0~255" id="redInput"><br><br>
+      <div style="width:30px;height:30px;background: green;text-align:center;line-height:30px;display: inline-block">G:
+      </div>
+      <input type="number" min="0" max="255" step="1" placeholder="0~255" id="greenInput"><br><br>
+      <div
+        style="width:30px;height:30px;color:aliceblue;background: blue;text-align:center;line-height:30px;display: inline-block">
+        B:
+      </div>
+      <input type="number" min="0" max="255" step="1" placeholder="0~255" id="blueInput"><br><br>
+      <button type="button" class="btn btn-primary" id="button">convert</button>
+    </div>
+    <div>
+      <h2>HEX</h2>
+      <div id="hexColor" style="margin:3px;width:100px;height:30px;border:1px black solid"></div>
+      <div id="hexColorBox" style="width:100px;height:100px;border:1px black solid;background: white;">
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="index1.js"></script>
+</body>
+
+</html>
