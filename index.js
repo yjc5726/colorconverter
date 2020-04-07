@@ -15,6 +15,14 @@
       hexColorCode.innerHTML = ""
       hexColorBox.style.backgroundColor = "white"
     }
+    else if (Number(redInput.value) - Math.floor(Number(redInput.value)) > 0 || Number(greenInput.value) - Math.floor(Number(greenInput.value)) > 0 || Number(blueInput.value) - Math.floor(Number(blueInput.value)) > 0) {
+      alert("數字必須要是整數，不能有小數")
+      redInput.value = ""
+      greenInput.value = ""
+      blueInput.value = ""
+      hexColorCode.innerHTML = ""
+      hexColorBox.style.backgroundColor = "white"
+    }
     else {
       let redValue = Number(redInput.value).toString(16)
       let greenValue = Number(greenInput.value).toString(16)
