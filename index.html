@@ -11,7 +11,7 @@
 
 <body>
   <div class="flex-container" style="display: flex;margin: 50px;justify-content: space-evenly;">
-    <form>
+    <form action="" method="post" target="nm_iframe">
       <h2>RGB</h2>
       <div style="width:30px;height:30px;background: red;text-align:center;line-height:30px;display: inline-block">R:
       </div>
@@ -25,14 +25,9 @@
         B:
       </div>
       <input type="number" min="0" max="255" step="1" placeholder="0~255" id="blueInput" required /><br><br>
-      <button type="button" class="btn btn-primary" id="button">convert</button>
+      <button type="submit" class="btn btn-primary" id="button">convert</button>
 
-
-
-
-
-
-
+      <iframe id="id_iframe" name="nm_iframe" style="display:none;"></iframe>
     </form>
     <div>
       <h2>HEX</h2>
