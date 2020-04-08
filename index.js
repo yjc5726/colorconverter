@@ -15,6 +15,7 @@
       hexColorCode.innerHTML = ""
       hexColorBox.style.backgroundColor = "white"
     }
+
     else if (Number(redInput.value) - Math.floor(Number(redInput.value)) > 0 || Number(greenInput.value) - Math.floor(Number(greenInput.value)) > 0 || Number(blueInput.value) - Math.floor(Number(blueInput.value)) > 0) {
       alert("數字必須要是整數，不能有小數")
       redInput.value = ""
@@ -31,9 +32,7 @@
       hexColorBox.style.backgroundColor = `#${redValue.padStart(2, '0')}${greenValue.padStart(2, '0')}${blueValue.padStart(2, '0')}`
     }
 
-
   }
-
 
   button.addEventListener('click', rgbToHex)
 

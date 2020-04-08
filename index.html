@@ -11,21 +11,29 @@
 
 <body>
   <div class="flex-container" style="display: flex;margin: 50px;justify-content: space-evenly;">
-    <div>
+    <form>
       <h2>RGB</h2>
       <div style="width:30px;height:30px;background: red;text-align:center;line-height:30px;display: inline-block">R:
       </div>
-      <input type="number" min="0" max="255" step="1" placeholder="0~255" id="redInput"><br><br>
+      <input type="number" min="0" max="255" step="1" placeholder="0~255" id="redInput" required />
+      <br><br>
       <div style="width:30px;height:30px;background: green;text-align:center;line-height:30px;display: inline-block">G:
       </div>
-      <input type="number" min="0" max="255" step="1" placeholder="0~255" id="greenInput"><br><br>
+      <input type="number" min="0" max="255" step="1" placeholder="0~255" id="greenInput" required /><br><br>
       <div
         style="width:30px;height:30px;color:aliceblue;background: blue;text-align:center;line-height:30px;display: inline-block">
         B:
       </div>
-      <input type="number" min="0" max="255" step="1" placeholder="0~255" id="blueInput"><br><br>
+      <input type="number" min="0" max="255" step="1" placeholder="0~255" id="blueInput" required /><br><br>
       <button type="button" class="btn btn-primary" id="button">convert</button>
-    </div>
+
+
+
+
+
+
+
+    </form>
     <div>
       <h2>HEX</h2>
       <div id="hexColor" style="margin:3px;width:100px;height:30px;border:1px black solid"></div>
